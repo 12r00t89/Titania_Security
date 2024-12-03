@@ -10,20 +10,20 @@ class DashboardScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black, // Fondo negro
+      backgroundColor: Colors.black, 
       appBar: AppBar(
         title: Text(
           'Titania Dashboard',
           style: TextStyle(color: Colors.white),
         ),
-        backgroundColor: Colors.black, // Fondo del AppBar en negro
+        backgroundColor: Colors.black, 
         elevation: 0,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            // Sección de Gestión de Dispositivos
+            
             Expanded(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -31,13 +31,13 @@ class DashboardScreen extends StatelessWidget {
                   Text(
                     "Device Management",
                     style: TextStyle(
-                      fontSize: 28, // Título más grande
-                      fontWeight: FontWeight.bold, // Negrita
-                      color: Colors.green, // Título en verde
+                      fontSize: 28, 
+                      fontWeight: FontWeight.bold, 
+                      color: Colors.green, 
                     ),
                     textAlign: TextAlign.center,
                   ),
-                  SizedBox(height: 40), // Separación mayor entre el título y los botones
+                  SizedBox(height: 40), 
                   Row(
                     children: [
                       Expanded(
@@ -72,9 +72,9 @@ class DashboardScreen extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(height: 60), // Separación mayor entre secciones
+            SizedBox(height: 60), 
 
-            // Sección de Protección
+            
             Expanded(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -82,13 +82,13 @@ class DashboardScreen extends StatelessWidget {
                   Text(
                     "Security Protection",
                     style: TextStyle(
-                      fontSize: 28, // Título más grande
-                      fontWeight: FontWeight.bold, // Negrita
-                      color: Colors.green, // Título en verde
+                      fontSize: 28, 
+                      fontWeight: FontWeight.bold, 
+                      color: Colors.green, 
                     ),
                     textAlign: TextAlign.center,
                   ),
-                  SizedBox(height: 40), // Separación mayor entre el título y los botones
+                  SizedBox(height: 40), 
                   Row(
                     children: [
                       Expanded(
@@ -123,9 +123,9 @@ class DashboardScreen extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(height: 60), // Separación mayor entre secciones
+            SizedBox(height: 60), 
 
-            // Sección de Detección y Respuesta
+            
             Expanded(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -133,13 +133,13 @@ class DashboardScreen extends StatelessWidget {
                   Text(
                     "Detection and Analysis",
                     style: TextStyle(
-                      fontSize: 28, // Título más grande
-                      fontWeight: FontWeight.bold, // Negrita
-                      color: Colors.green, // Título en verde
+                      fontSize: 28, 
+                      fontWeight: FontWeight.bold, 
+                      color: Colors.green, 
                     ),
                     textAlign: TextAlign.center,
                   ),
-                  SizedBox(height: 40), // Separación mayor entre el título y los botones
+                  SizedBox(height: 40), 
                   Row(
                     children: [
                       Expanded(
@@ -186,19 +186,19 @@ class DashboardScreen extends StatelessWidget {
       icon: Icon(
         icon,
         size: 30,
-        color: Colors.white, // Ícono en blanco
+        color: Colors.white,
       ),
       label: Text(
         text,
         style: TextStyle(
           fontSize: 18,
           fontWeight: FontWeight.bold,
-          color: Colors.white, // Texto en blanco
+          color: Colors.white, 
         ),
       ),
       style: ElevatedButton.styleFrom(
-        padding: EdgeInsets.symmetric(vertical: 30), // Aumenta el tamaño vertical del botón
-        backgroundColor: Colors.purple, // Botón en morado
+        padding: EdgeInsets.symmetric(vertical: 30),
+        backgroundColor: Colors.purple, 
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(30),
         ),

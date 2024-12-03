@@ -52,7 +52,7 @@ class _BlockchainScreenState extends State<BlockchainScreen> {
     _timer = Timer.periodic(Duration(seconds: 3), (timer) {
       setState(() {
         if (index == 2) {
-          // Cuando es "Threat detected!", agrega una amenaza y una vulnerabilidad
+          
           final threat = _threats[random.nextInt(_threats.length)];
           final vulnerability = _vulnerabilities[random.nextInt(_vulnerabilities.length)];
           _protectionLogs.add({
@@ -61,13 +61,13 @@ class _BlockchainScreenState extends State<BlockchainScreen> {
             "vulnerability": vulnerability,
           });
         } else {
-          // Otros mensajes estándar
+          
           _protectionLogs.add({
             "message": actions[index],
           });
         }
 
-        // Mantener el historial limitado a 10 eventos
+        
         if (_protectionLogs.length > 10) {
           _protectionLogs.removeAt(0);
         }
